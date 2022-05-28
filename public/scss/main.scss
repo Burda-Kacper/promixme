@@ -12,3 +12,6 @@
 .hidden {
   display: none !important;
 }
+
+@import 'components/layout';
+@import 'dashboard/dashboard';

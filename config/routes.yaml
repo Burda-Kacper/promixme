@@ -8,3 +8,7 @@ login:
 logout:
   path: /logout
   controller: App\Controller\LoginController::logout
+
+dashboard:
+  path: /dashboard
+  controller: App\Controller\DashboardController::dashboard

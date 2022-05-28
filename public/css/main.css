@@ -9,3 +9,45 @@
 
 .hidden {
   display: none !important; }
+
+.layout-base {
+  background: linear-gradient(180deg, #171717 0%, #3c135d 100%);
+  width: 100%;
+  height: 100vh;
+  display: flex; }
+
+.layout-menu {
+  width: 100px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column; }
+
+.layout-menu-inner {
+  margin: auto; }
+
+.layout-main {
+  width: calc(100% - 100px);
+  height: 100%;
+  overflow: auto; }
+
+.layout-menu-item {
+  margin: 25px 0;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.25);
+  text-decoration: none;
+  border-radius: 50%;
+  transition: color 0.2s;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  cursor: pointer; }
+  .layout-menu-item:hover {
+    color: rgba(255, 255, 255, 0.65); }
+  .layout-menu-item.active {
+    color: white; }
+  .layout-menu-item i {
+    font-size: 30px; }
