@@ -1,5 +1,66 @@
-{% extends 'base.html.twig' %}
+{% extends 'components/layout.html.twig' %}
 
-{% block body %}
-    Homepage screen placeholder
+{% block content %}
+    <div class="layout-padding">
+        <img draggable="false" class="homepage-disk" src="{{ asset('img/static/homepage/disk.png') }}"/>
+        <div class="homepage-layout">
+            <section class="left">
+                <h1 class="homepage-welcome">Witaj na promixme!</h1>
+                <p class="homepage-intro">Czym jest promixme?<br/><br/>Niezwykle ważnym elementem każdego utworu jest
+                    jego brzmienie.
+                    Znajdziesz
+                    tutaj
+                    zarówno specjalistów jak i amatorów, którzy sprawią, że Twoja muzyka wroczy na nowy poziom. Mix,
+                    mastering, dodatkowe wokale, chórki, korekcja - czegokolwiek potrzebujesz, znajdziesz to na
+                    promixme.
+                    <br/><br/>
+                    Dzięki nam możesz w pełni skupić się na swojej twórczości i nie martwić się o mozolny proces
+                    komunikacji
+                    przez czaty. Na promixme możesz porównywać różne wersje utworów i dodawać w odpowiednich miejscach
+                    komentarze, dzięki czemu Twoja komunikacja stanie się o wiele bardziej wydajna.
+                    <br/><br/>
+                    Świadczysz usługi związane z muzyką? Na promixme stworzysz profesjonalną wizytówkę, pozwolisz
+                    potencjalnym klientom na odnalezienie Ciebie, a także uzyskasz narzędzia, które przyspieszą Twoją
+                    pracę.
+                    <br/><br/>
+                    Zarejestruj się już dziś i ciesz z wygód promixme!
+                </p>
+                <a href="#" class="homepage-register">Zarejestruj się</a>
+            </section>
+            <div class="right">
+                <div class="homepage-login-wrapper">
+                    <section class="homepage-login-container layout-tile">
+                        <div class="left">
+                            <i class="fa-solid fa-question"></i>
+                        </div>
+                        <div class="right">
+                            <p>Niezalogowany użytkownik</p>
+                            <a class="homepage-login-button" href="#">Zaloguj się</a>
+                        </div>
+                    </section>
+                </div>
+                <section class="homepage-featured">
+                    <h2 class="homepage-featured-header">Polecani użytkownicy:</h2>
+                    <div class="homepage-featured-container">
+                        <div class="homepage-featured-card layout-tile">
+                            <img class="homepage-featured-image" src="{{ asset('img/static/homepage/disk.png') }}"/>
+                            <p>promixer</p>
+                        </div>
+                        <div class="homepage-featured-card layout-tile">
+                            <img class="homepage-featured-image" src="{{ asset('img/static/homepage/disk.png') }}"/>
+                            <p>Michał Nowak</p>
+                        </div>
+                        <div class="homepage-featured-card layout-tile">
+                            <img class="homepage-featured-image" src="{{ asset('img/static/homepage/disk.png') }}"/>
+                            <p>muzykalnee</p>
+                        </div>
+                        <div class="homepage-featured-card layout-tile">
+                            <img class="homepage-featured-image" src="{{ asset('img/static/homepage/disk.png') }}"/>
+                            <p>mixmastering</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
 {% endblock %}

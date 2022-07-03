@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  line-height: 18px; }
+  line-height: 22px; }
 
 .hidden {
   display: none !important; }
@@ -14,7 +14,8 @@
   background: linear-gradient(180deg, #171717 0%, #3c135d 100%);
   width: 100%;
   height: 100vh;
-  display: flex; }
+  display: flex;
+  color: #fff; }
 
 .layout-menu {
   width: 100px;
@@ -51,3 +52,124 @@
     color: white; }
   .layout-menu-item i {
     font-size: 30px; }
+
+.layout-padding {
+  padding: 50px; }
+
+.layout-tile {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 10px; }
+
+.homepage-welcome {
+  font-size: 40px;
+  line-height: 42px;
+  margin-bottom: 30px; }
+
+.homepage-layout {
+  display: flex;
+  justify-content: space-between; }
+  .homepage-layout > .left {
+    width: 25%; }
+  .homepage-layout > .right {
+    width: 70%; }
+
+.homepage-intro {
+  margin-bottom: 25px; }
+
+.homepage-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+  background-color: #F97316;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 20px;
+  transition: background-color 0.2s;
+  border: 1px solid rgba(0, 0, 0, 0.75); }
+  .homepage-register:hover {
+    background-color: #FDBA74; }
+
+.homepage-disk {
+  position: fixed;
+  right: -400px;
+  bottom: -500px;
+  width: 1200px;
+  z-index: 0;
+  user-select: none;
+  opacity: 0.15;
+  filter: blur(8px);
+  animation-name: homepage-disk;
+  animation-duration: 240s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@keyframes homepage-disk {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.homepage-login-wrapper {
+  display: flex;
+  justify-content: flex-end; }
+
+.homepage-login-container {
+  display: flex;
+  align-items: center;
+  width: 400px; }
+  .homepage-login-container > .left {
+    width: 75px;
+    height: 75px;
+    margin-right: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .homepage-login-container > .left i {
+      font-size: 50px; }
+
+.homepage-login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  height: 32px;
+  font-size: 14px;
+  background-color: #F97316;
+  transition: background-color 0.2s;
+  border-radius: 8px;
+  width: 100px; }
+  .homepage-login-button:hover {
+    background-color: #FDBA74; }
+
+.homepage-featured {
+  padding-top: 25px; }
+
+.homepage-featured-header {
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 25px; }
+
+.homepage-featured-container {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  position: relative; }
+
+.homepage-featured-card {
+  width: 24%;
+  padding-top: 20px; }
+
+.homepage-featured-image {
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  margin-bottom: 10px;
+  border-radius: 5px; }
