@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 22px;
 }
 
 .hidden {
@@ -14,4 +14,5 @@
 }
 
 @import 'components/layout';
-@import 'dashboard/dashboard';
+@import 'components/variables';
+@import 'homepage/homepage';
